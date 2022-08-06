@@ -12,7 +12,7 @@ type RouteT = {
 export enum PATHS {
   HOME = '/',
   BDX_BUDDY = '/bdx-buddy',
-  BDX_BUDDY_HELP = '/bdx-buddy/help',
+  BDX_BUDDY_HELP = '/bdx-buddy-help',
 }
 
 export const ROUTES: Record<string, RouteT> = {
