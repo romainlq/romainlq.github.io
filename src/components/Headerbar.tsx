@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Header, createStyles, Container, Group, Burger, Transition, Paper, Anchor } from "@mantine/core"
 import { PATHS } from "@/routes";
 import { Link, useLocation } from "wouter";
@@ -42,7 +42,7 @@ const HeaderBar = () => {
     >
       <Anchor
         className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-        onClick={(event) => {
+        onClick={(event: any) => {
           event.preventDefault();
           setActive(link.link);
           close();
